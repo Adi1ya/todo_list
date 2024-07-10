@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #414141;
+}
+
+nav {
+    background-color: powderblue;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.heading {
+    text-decoration: none;
+    color: #414141;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-area {
+    margin-bottom: 30px;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 17px;
+    outline-color: powderblue;
+    background-color: whitesmoke;
+}
+
+input:focus {
+    outline: 5px solid powderblue;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 900;
+    background-color: powderblue;
+    margin: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 5px solid powderblue;
+}
+
+table {
+    border: 0.5px solid black;
+    width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+th {
+    font-size: 20px;
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+th:nth-child(4) {
+    text-align: center;
+}
+
+/* Two red lines code starts */
+.table thead {
+    position: relative;
+}
+
+.table thead::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to bottom, #ff0000 2px, transparent 2px, transparent 4px, #ff0000 4px);
+}
+/* Two red lines code ends */
+
+td {
+    border-bottom: 1pt dashed black;
+    text-align: start;
+    padding: 5px;
+}
+
+tbody {
+    padding: 3px;
+    font-size: 15px;
+}
+
+.action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.custom-color-check {
+    color: #03b074;
+}
+
+.custom-color-xmark {
+    color: #ff0000;
+}
