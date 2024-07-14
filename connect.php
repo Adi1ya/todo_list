@@ -2,7 +2,7 @@
 
     $hostname = "localhost";
     $username = "root";
-    $password = "passdbms@11";
+    $password = "";
     $dbname = "todo_list";
 
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
